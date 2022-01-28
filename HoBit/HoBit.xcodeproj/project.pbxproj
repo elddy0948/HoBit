@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7284FE2FE670BA6E63DBD1ED /* Pods_HoBit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E3BE5016C78693B4BFEB24 /* Pods_HoBit.framework */; };
 		B494361D27A39C860077574E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494361C27A39C860077574E /* AppDelegate.swift */; };
 		B494361F27A39C860077574E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494361E27A39C860077574E /* SceneDelegate.swift */; };
 		B494362627A39C870077574E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B494362527A39C870077574E /* Assets.xcassets */; };
@@ -29,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37D7548E91CD3F0AB0AF1667 /* Pods-HoBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoBit.debug.xcconfig"; path = "Target Support Files/Pods-HoBit/Pods-HoBit.debug.xcconfig"; sourceTree = "<group>"; };
+		86E3BE5016C78693B4BFEB24 /* Pods_HoBit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoBit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8EC4528F7F710EEA9ED546 /* Pods-HoBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoBit.release.xcconfig"; path = "Target Support Files/Pods-HoBit/Pods-HoBit.release.xcconfig"; sourceTree = "<group>"; };
 		B494361927A39C860077574E /* HoBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B494361C27A39C860077574E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B494361E27A39C860077574E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,17 +61,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7284FE2FE670BA6E63DBD1ED /* Pods_HoBit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DAFBB36DD5B345F0B0A78A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37D7548E91CD3F0AB0AF1667 /* Pods-HoBit.debug.xcconfig */,
+				8D8EC4528F7F710EEA9ED546 /* Pods-HoBit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5AF80C7693F37CD57991CFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86E3BE5016C78693B4BFEB24 /* Pods_HoBit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B494361027A39C860077574E = {
 			isa = PBXGroup;
 			children = (
 				B494361B27A39C860077574E /* HoBit */,
 				B494361A27A39C860077574E /* Products */,
+				7DAFBB36DD5B345F0B0A78A6 /* Pods */,
+				A5AF80C7693F37CD57991CFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +107,7 @@
 		B494361B27A39C860077574E /* HoBit */ = {
 			isa = PBXGroup;
 			children = (
+				B494365427A3C8A10077574E /* Networking */,
 				B494361C27A39C860077574E /* AppDelegate.swift */,
 				B494362527A39C870077574E /* Assets.xcassets */,
 				B494363027A39E2F0077574E /* Coordinators */,
@@ -154,6 +180,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B494365427A3C8A10077574E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B494362D27A39C870077574E /* Build configuration list for PBXNativeTarget "HoBit" */;
 			buildPhases = (
+				E5F449CE333D4EF1BA4E3EB3 /* [CP] Check Pods Manifest.lock */,
 				B494361527A39C860077574E /* Sources */,
 				B494361627A39C860077574E /* Frameworks */,
 				B494361727A39C860077574E /* Resources */,
+				C6D53FB245AFCB29948588C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +253,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6D53FB245AFCB29948588C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoBit/Pods-HoBit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoBit/Pods-HoBit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HoBit/Pods-HoBit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F449CE333D4EF1BA4E3EB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoBit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B494361527A39C860077574E /* Sources */ = {
@@ -376,6 +453,7 @@
 		};
 		B494362E27A39C870077574E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D7548E91CD3F0AB0AF1667 /* Pods-HoBit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -404,6 +482,7 @@
 		};
 		B494362F27A39C870077574E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8EC4528F7F710EEA9ED546 /* Pods-HoBit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
