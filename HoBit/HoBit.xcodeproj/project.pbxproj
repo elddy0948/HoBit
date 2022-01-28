@@ -16,6 +16,7 @@
 		B494363527A39EF00077574E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363427A39EF00077574E /* Coordinator.swift */; };
 		B494363727A39F830077574E /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363627A39F830077574E /* SceneRouter.swift */; };
 		B494363927A3A0240077574E /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363827A3A0240077574E /* SceneCoordinator.swift */; };
+		B494363B27A3A6DF0077574E /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363A27A3A6DF0077574E /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B494363427A39EF00077574E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B494363627A39F830077574E /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		B494363827A3A0240077574E /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		B494363A27A3A6DF0077574E /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				B494363227A39E440077574E /* Router.swift */,
 				B494363627A39F830077574E /* SceneRouter.swift */,
+				B494363A27A3A6DF0077574E /* TabBarRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				B494363327A39E440077574E /* Router.swift in Sources */,
 				B494363727A39F830077574E /* SceneRouter.swift in Sources */,
+				B494363B27A3A6DF0077574E /* TabBarRouter.swift in Sources */,
 				B494362127A39C860077574E /* ViewController.swift in Sources */,
 				B494363527A39EF00077574E /* Coordinator.swift in Sources */,
 				B494361D27A39C860077574E /* AppDelegate.swift in Sources */,
