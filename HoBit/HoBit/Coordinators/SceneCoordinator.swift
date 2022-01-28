@@ -16,6 +16,20 @@ final class SceneCoordinator: Coordinator {
       tabBarController,
       animated: true
     )
+    
+    let tabBarRouter = TabBarRouter(
+      tabBarController: tabBarController
+    )
+    
+    let coreScreenCoordinator = CoreScreenCoordinator(
+      router: tabBarRouter
+    )
+    
+    presentChild(
+      coreScreenCoordinator,
+      animated: true,
+      onDismissed: nil
+    )
   }
   
   func dismiss(animated: Bool) {
