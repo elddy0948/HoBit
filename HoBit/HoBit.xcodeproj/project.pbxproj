@@ -23,6 +23,9 @@
 		B494364727A3B32C0077574E /* CryptoCurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364627A3B32C0077574E /* CryptoCurrencyListViewController.swift */; };
 		B494364927A3B3540077574E /* DepositWithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364827A3B3540077574E /* DepositWithdrawalViewController.swift */; };
 		B494364C27A3BB7B0077574E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364B27A3BB7B0077574E /* Constants.swift */; };
+		B494364F27A3C7760077574E /* TickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364E27A3C7760077574E /* TickerResponse.swift */; };
+		B494365127A3C7900077574E /* SubscriptionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494365027A3C7900077574E /* SubscriptionForm.swift */; };
+		B494365327A3C7960077574E /* TickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494365227A3C7960077574E /* TickerContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		B494364627A3B32C0077574E /* CryptoCurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyListViewController.swift; sourceTree = "<group>"; };
 		B494364827A3B3540077574E /* DepositWithdrawalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositWithdrawalViewController.swift; sourceTree = "<group>"; };
 		B494364B27A3BB7B0077574E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B494364E27A3C7760077574E /* TickerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerResponse.swift; sourceTree = "<group>"; };
+		B494365027A3C7900077574E /* SubscriptionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionForm.swift; sourceTree = "<group>"; };
+		B494365227A3C7960077574E /* TickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,15 +82,16 @@
 		B494361B27A39C860077574E /* HoBit */ = {
 			isa = PBXGroup;
 			children = (
+				B494361C27A39C860077574E /* AppDelegate.swift */,
+				B494362527A39C870077574E /* Assets.xcassets */,
+				B494363027A39E2F0077574E /* Coordinators */,
+				B494362A27A39C870077574E /* Info.plist */,
+				B494362727A39C870077574E /* LaunchScreen.storyboard */,
+				B494364D27A3C7480077574E /* Models */,
+				B494363127A39E330077574E /* Routers */,
+				B494361E27A39C860077574E /* SceneDelegate.swift */,
 				B494364A27A3BB750077574E /* Utils */,
 				B494364527A3B2FD0077574E /* ViewControllers */,
-				B494363127A39E330077574E /* Routers */,
-				B494363027A39E2F0077574E /* Coordinators */,
-				B494361C27A39C860077574E /* AppDelegate.swift */,
-				B494361E27A39C860077574E /* SceneDelegate.swift */,
-				B494362527A39C870077574E /* Assets.xcassets */,
-				B494362727A39C870077574E /* LaunchScreen.storyboard */,
-				B494362A27A39C870077574E /* Info.plist */,
 			);
 			path = HoBit;
 			sourceTree = "<group>";
@@ -135,6 +142,16 @@
 				B494364B27A3BB7B0077574E /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B494364D27A3C7480077574E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B494364E27A3C7760077574E /* TickerResponse.swift */,
+				B494365027A3C7900077574E /* SubscriptionForm.swift */,
+				B494365227A3C7960077574E /* TickerContent.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,15 +228,18 @@
 				B494363327A39E440077574E /* Router.swift in Sources */,
 				B494363727A39F830077574E /* SceneRouter.swift in Sources */,
 				B494363B27A3A6DF0077574E /* TabBarRouter.swift in Sources */,
+				B494364F27A3C7760077574E /* TickerResponse.swift in Sources */,
 				B494363D27A3A8930077574E /* CoreScreenTabBarCoordinator.swift in Sources */,
 				B494364927A3B3540077574E /* DepositWithdrawalViewController.swift in Sources */,
 				B494364727A3B32C0077574E /* CryptoCurrencyListViewController.swift in Sources */,
 				B494363527A39EF00077574E /* Coordinator.swift in Sources */,
 				B494361D27A39C860077574E /* AppDelegate.swift in Sources */,
+				B494365127A3C7900077574E /* SubscriptionForm.swift in Sources */,
 				B494363927A3A0240077574E /* SceneCoordinator.swift in Sources */,
 				B494363F27A3ADCD0077574E /* NavigationRouter.swift in Sources */,
 				B494364C27A3BB7B0077574E /* Constants.swift in Sources */,
 				B494361F27A39C860077574E /* SceneDelegate.swift in Sources */,
+				B494365327A3C7960077574E /* TickerContent.swift in Sources */,
 				B494364127A3B1EA0077574E /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
