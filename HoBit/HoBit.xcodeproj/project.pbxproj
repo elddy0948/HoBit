@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B494361D27A39C860077574E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494361C27A39C860077574E /* AppDelegate.swift */; };
 		B494361F27A39C860077574E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494361E27A39C860077574E /* SceneDelegate.swift */; };
-		B494362127A39C860077574E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494362027A39C860077574E /* ViewController.swift */; };
 		B494362627A39C870077574E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B494362527A39C870077574E /* Assets.xcassets */; };
 		B494362927A39C870077574E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B494362727A39C870077574E /* LaunchScreen.storyboard */; };
 		B494363327A39E440077574E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363227A39E440077574E /* Router.swift */; };
@@ -17,13 +16,19 @@
 		B494363727A39F830077574E /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363627A39F830077574E /* SceneRouter.swift */; };
 		B494363927A3A0240077574E /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363827A3A0240077574E /* SceneCoordinator.swift */; };
 		B494363B27A3A6DF0077574E /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363A27A3A6DF0077574E /* TabBarRouter.swift */; };
+		B494363D27A3A8930077574E /* CoreScreenTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363C27A3A8930077574E /* CoreScreenTabBarCoordinator.swift */; };
+		B494363F27A3ADCD0077574E /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494363E27A3ADCD0077574E /* NavigationRouter.swift */; };
+		B494364127A3B1EA0077574E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364027A3B1EA0077574E /* HomeCoordinator.swift */; };
+		B494364327A3B1F60077574E /* DepositWithdrawalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364227A3B1F60077574E /* DepositWithdrawalCoordinator.swift */; };
+		B494364727A3B32C0077574E /* CryptoCurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364627A3B32C0077574E /* CryptoCurrencyListViewController.swift */; };
+		B494364927A3B3540077574E /* DepositWithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364827A3B3540077574E /* DepositWithdrawalViewController.swift */; };
+		B494364C27A3BB7B0077574E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494364B27A3BB7B0077574E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B494361927A39C860077574E /* HoBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B494361C27A39C860077574E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B494361E27A39C860077574E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B494362027A39C860077574E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B494362527A39C870077574E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B494362827A39C870077574E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B494362A27A39C870077574E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +37,13 @@
 		B494363627A39F830077574E /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		B494363827A3A0240077574E /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		B494363A27A3A6DF0077574E /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		B494363C27A3A8930077574E /* CoreScreenTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreScreenTabBarCoordinator.swift; sourceTree = "<group>"; };
+		B494363E27A3ADCD0077574E /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		B494364027A3B1EA0077574E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B494364227A3B1F60077574E /* DepositWithdrawalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositWithdrawalCoordinator.swift; sourceTree = "<group>"; };
+		B494364627A3B32C0077574E /* CryptoCurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyListViewController.swift; sourceTree = "<group>"; };
+		B494364827A3B3540077574E /* DepositWithdrawalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositWithdrawalViewController.swift; sourceTree = "<group>"; };
+		B494364B27A3BB7B0077574E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +76,12 @@
 		B494361B27A39C860077574E /* HoBit */ = {
 			isa = PBXGroup;
 			children = (
+				B494364A27A3BB750077574E /* Utils */,
+				B494364527A3B2FD0077574E /* ViewControllers */,
 				B494363127A39E330077574E /* Routers */,
 				B494363027A39E2F0077574E /* Coordinators */,
 				B494361C27A39C860077574E /* AppDelegate.swift */,
 				B494361E27A39C860077574E /* SceneDelegate.swift */,
-				B494362027A39C860077574E /* ViewController.swift */,
 				B494362527A39C870077574E /* Assets.xcassets */,
 				B494362727A39C870077574E /* LaunchScreen.storyboard */,
 				B494362A27A39C870077574E /* Info.plist */,
@@ -79,8 +92,10 @@
 		B494363027A39E2F0077574E /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				B494364427A3B1F80077574E /* CoreCoordinators */,
 				B494363427A39EF00077574E /* Coordinator.swift */,
 				B494363827A3A0240077574E /* SceneCoordinator.swift */,
+				B494363C27A3A8930077574E /* CoreScreenTabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -91,8 +106,35 @@
 				B494363227A39E440077574E /* Router.swift */,
 				B494363627A39F830077574E /* SceneRouter.swift */,
 				B494363A27A3A6DF0077574E /* TabBarRouter.swift */,
+				B494363E27A3ADCD0077574E /* NavigationRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		B494364427A3B1F80077574E /* CoreCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B494364027A3B1EA0077574E /* HomeCoordinator.swift */,
+				B494364227A3B1F60077574E /* DepositWithdrawalCoordinator.swift */,
+			);
+			path = CoreCoordinators;
+			sourceTree = "<group>";
+		};
+		B494364527A3B2FD0077574E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B494364627A3B32C0077574E /* CryptoCurrencyListViewController.swift */,
+				B494364827A3B3540077574E /* DepositWithdrawalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B494364A27A3BB750077574E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B494364B27A3BB7B0077574E /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,14 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B494364327A3B1F60077574E /* DepositWithdrawalCoordinator.swift in Sources */,
 				B494363327A39E440077574E /* Router.swift in Sources */,
 				B494363727A39F830077574E /* SceneRouter.swift in Sources */,
 				B494363B27A3A6DF0077574E /* TabBarRouter.swift in Sources */,
-				B494362127A39C860077574E /* ViewController.swift in Sources */,
+				B494363D27A3A8930077574E /* CoreScreenTabBarCoordinator.swift in Sources */,
+				B494364927A3B3540077574E /* DepositWithdrawalViewController.swift in Sources */,
+				B494364727A3B32C0077574E /* CryptoCurrencyListViewController.swift in Sources */,
 				B494363527A39EF00077574E /* Coordinator.swift in Sources */,
 				B494361D27A39C860077574E /* AppDelegate.swift in Sources */,
 				B494363927A3A0240077574E /* SceneCoordinator.swift in Sources */,
+				B494363F27A3ADCD0077574E /* NavigationRouter.swift in Sources */,
+				B494364C27A3BB7B0077574E /* Constants.swift in Sources */,
 				B494361F27A39C860077574E /* SceneDelegate.swift in Sources */,
+				B494364127A3B1EA0077574E /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
