@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B46C103027A4FF9300259158 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C102F27A4FF9300259158 /* WebSocketConnection.swift */; };
 		B46C103227A502F000259158 /* WebSocketTaskConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C103127A502F000259158 /* WebSocketTaskConnection.swift */; };
+		B47116C227A58A5A009C6207 /* CryptoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47116C127A58A5A009C6207 /* CryptoListCell.swift */; };
+		B47116C427A58B08009C6207 /* CryptoListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47116C327A58B08009C6207 /* CryptoListCellView.swift */; };
 		B494361D27A39C860077574E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494361C27A39C860077574E /* AppDelegate.swift */; };
 		B494361F27A39C860077574E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494361E27A39C860077574E /* SceneDelegate.swift */; };
 		B494362627A39C870077574E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B494362527A39C870077574E /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		B46C102F27A4FF9300259158 /* WebSocketConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketConnection.swift; sourceTree = "<group>"; };
 		B46C103127A502F000259158 /* WebSocketTaskConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTaskConnection.swift; sourceTree = "<group>"; };
+		B47116C127A58A5A009C6207 /* CryptoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListCell.swift; sourceTree = "<group>"; };
+		B47116C327A58B08009C6207 /* CryptoListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListCellView.swift; sourceTree = "<group>"; };
 		B494361927A39C860077574E /* HoBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B494361C27A39C860077574E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B494361E27A39C860077574E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B47116C027A58A49009C6207 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B47116C127A58A5A009C6207 /* CryptoListCell.swift */,
+				B47116C327A58B08009C6207 /* CryptoListCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B494361027A39C860077574E = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +99,7 @@
 		B494361B27A39C860077574E /* HoBit */ = {
 			isa = PBXGroup;
 			children = (
+				B47116C027A58A49009C6207 /* Views */,
 				B494365427A3C8A10077574E /* Networking */,
 				B494361C27A39C860077574E /* AppDelegate.swift */,
 				B494362527A39C870077574E /* Assets.xcassets */,
@@ -246,6 +260,8 @@
 				B494364F27A3C7760077574E /* TickerResponse.swift in Sources */,
 				B494363D27A3A8930077574E /* CoreScreenTabBarCoordinator.swift in Sources */,
 				B494364927A3B3540077574E /* DepositWithdrawalViewController.swift in Sources */,
+				B47116C427A58B08009C6207 /* CryptoListCellView.swift in Sources */,
+				B47116C227A58A5A009C6207 /* CryptoListCell.swift in Sources */,
 				B494364727A3B32C0077574E /* CryptoCurrencyListViewController.swift in Sources */,
 				B494363527A39EF00077574E /* Coordinator.swift in Sources */,
 				B494361D27A39C860077574E /* AppDelegate.swift in Sources */,
