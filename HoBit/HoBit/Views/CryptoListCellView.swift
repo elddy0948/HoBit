@@ -42,10 +42,38 @@ class CryptoListCellView: UIStackView {
   func configureLabels(content: TickerContent) {
     DispatchQueue.main.async { [weak self] in
       guard let self = self else { return }
+      self.checkLabelColor(content.changedRate)
       self.symbolLabel.text = content.symbol
-      self.changeRateLabel.text = content.changedRate
-      self.valueLabel.text = content.value
+      self.changeRateLabel.text = "\(content.changedRate)%"
+      self.valueLabel.text = self.formatValue(content.value)
     }
+  }
+  
+  private func checkLabelColor(_ changedRate: String) {
+    let rate = Double(changedRate) ?? 0.0
+    
+    if rate > 0.0 {
+      setupLabelColor(to: .systemRed)
+    } else if rate == 0.0 {
+      setupLabelColor()
+    } else {
+      setupLabelColor(to: .systemBlue)
+    }
+  }
+  
+  private func setupLabelColor(to color: UIColor = .label) {
+    changeRateLabel.textColor = color
+    //TODO: Close Price도 넣기
+  }
+  
+  private func formatValue(_ value: String) -> String {
+    var doubleValue = Double(value) ?? 0.0
+    doubleValue = ceil(doubleValue)
+    print("Double: ", doubleValue)
+    let intValue = Int(doubleValue)
+    print("Int: ", intValue)
+    let formattedValue = intValue.divideByMillions()
+    return formattedValue
   }
 }
 
