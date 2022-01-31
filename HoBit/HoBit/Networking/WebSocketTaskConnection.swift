@@ -8,8 +8,14 @@ class WebSocketTaskConnection: NSObject {
   let delegateQueue = OperationQueue()
   
   //MARK: - Initializer
-  init(url: URL) {
+  override init() {
     super.init()
+    
+    guard let url = URL(
+      string: "wss://pubwss.bithumb.com/pub/ws"
+    ) else {
+      return
+    }
     
     var request = URLRequest(url: url)
     request.timeoutInterval = 5
